@@ -1,0 +1,379 @@
+allowed-worlds:
+  - world_arena1
+  - world_arena2
+maxblocks: 200
+
+cooldowns:
+  ENDER_PEARL: 15 # in seconds
+  WIND_CHARGE: 10 # in seconds
+
+
+sets:
+  potions:
+    speed:
+      material: SPLASH_POTION
+      amount: 4
+      potiontype: LONG_SWIFTNESS
+    strength:
+      material: SPLASH_POTION
+      amount: 12
+      potiontype: STRONG_STRENGTH
+  sword_kit:
+    DIAMOND_SWORD:
+      material: DIAMOND_SWORD
+      amount: 1
+      slot: 0
+      enchants:
+        SHARPNESS: 3
+    DIAMOND_HELMET:
+      material: DIAMOND_HELMET
+      slot: helmet
+      amount: 1
+      enchants:
+       PROTECTION: 3
+       UNBREAKING: 3
+    DIAMOND_CHESTPLATE:
+      material: DIAMOND_CHESTPLATE
+      amount: 1
+      slot: chestplate
+      enchants: 
+        PROTECTION: 3
+        UNBREAKING: 3
+    DIAMOND_LEGGINGS:
+      material: DIAMOND_LEGGINGS
+      amount: 1
+      slot: leggings
+      enchants:
+        PROTECTION: 3
+        UNBREAKING: 3
+    DIAMOND_BOOTS:
+      material: DIAMOND_BOOTS
+      amount: 1
+      slot: boots
+      enchants:
+        PROTECTION: 3
+        UNBREAKING: 3
+    GOLDEN_APPLE:
+      material: GOLDEN_APPLE
+      slot: offhand
+      amount: 5
+  diamond_armor:
+    DIAMOND_HELMET:
+      material: DIAMOND_HELMET
+      slot: helmet
+      amount: 1
+      enchants:
+        PROTECTION: 4
+        UNBREAKING: 3
+        MENDING: 1
+    DIAMOND_CHESTPLATE:
+      material: DIAMOND_CHESTPLATE
+      slot: chestplate
+      amount: 1
+      enchants:
+        PROTECTION: 4
+        UNBREAKING: 3
+        MENDING: 1
+    DIAMOND_LEGGINGS:
+      material: DIAMOND_LEGGINGS
+      slot: leggings
+      amount: 1
+      enchants:
+        PROTECTION: 4
+        UNBREAKING: 3
+        MENDING: 1
+    DIAMOND_BOOTS:
+      material: DIAMOND_BOOTS
+      slot: boots
+      amount: 1
+      enchants:
+        PROTECTION: 4
+        UNBREAKING: 3
+        MENDING: 1
+  DIAMOND_tools:
+    DIAMOND_SWORD_1:
+      material: DIAMOND_SWORD
+      slot: 0
+      amount: 1
+      enchants:
+        SHARPNESS: 5
+        UNBREAKING: 3
+        MENDING: 1
+    DIAMOND_AXE:
+      material: DIAMOND_AXE
+      slot: 3
+      amount: 1
+      enchants:
+        SHARPNESS: 5
+        UNBREAKING: 3
+        MENDING: 1
+  gaps:
+    GOLDEN_APPLE:
+      material: GOLDEN_APPLE
+      amount: 5
+  offhand:
+    SHIELD:
+      material: SHIELD
+      slot: offhand
+      amount: 1
+      enchants:
+        UNBREAKING: 3
+        MENDING: 1
+  misc:
+    EXPERIENCE_BOTTLE:
+      material: EXPERIENCE_BOTTLE
+      slot: 17
+      amount: 64
+    EXPERIENCE_BOTTLE1:
+      material: EXPERIENCE_BOTTLE
+      slot: 26
+      amount: 64
+    GOLDEN_APPLE:
+      material: GOLDEN_APPLE
+      slot: 6
+      amount: 64
+    ENCHANTED_GOLDEN_APPLE:
+      slot: 33
+      material: ENCHANTED_GOLDEN_APPLE
+      amount: 2
+    TOTEM_OF_UNDYING:
+      material: TOTEM_OF_UNDYING
+      amount: 2
+    GOLDEN_CARROT:
+      slot: 4
+      material: GOLDEN_CARROT
+      amount: 64
+    OAK_LOG:
+      slot: 9
+      material: OAK_LOG
+      amount: 64
+    ENDER_PEARL:
+      material: ENDER_PEARL
+      slot: 8
+      amount: 16
+    ENDER_PEARL1:
+      material: ENDER_PEARL
+      slot: 34
+      amount: 16
+    WIND_CHARGE:
+      slot:
+      material: WIND_CHARGE
+      amount: 128
+    COBWEB:
+      material: COBWEB
+      amount: 64
+    CHORUS_FRUIT:
+      material: CHORUS_FRUIT
+      amount: 64
+  masterwork_armor:
+    DIAMOND_HELMET:
+      material: masterwork_helmet
+      slot: helmet
+      amount: 1
+    DIAMOND_CHESTPLATE:
+      material: masterwork_chestplate
+      slot: chestplate
+      amount: 1
+    DIAMOND_LEGGINGS:
+      material: masterwork_leggings
+      slot: leggings
+      amount: 1
+    DIAMOND_BOOTS:
+      material: masterwork_boots
+      slot: boots
+      amount: 1
+  masterwork_tools:
+    DIAMOND_SWORD_1:
+      material: oiled_masterwork_sword
+      slot: 0
+      amount: 1
+    DIAMOND_SWORD_2:
+      material: oiled_masterwork_sword
+      slot: 27
+      amount: 1
+      enchants:
+        KNOCKBACK: 1
+    DIAMOND_AXE:
+      material: oiled_masterwork_axe
+      slot: 2
+      amount: 1
+      enchants:
+        SHARPNESS: 5
+  macekit:  
+    MACE:
+      material: MACE                               
+      amount: 1
+      slot: 3
+      enchants:
+        WIND_BURST: 2
+        DENSITY: 5
+        UNBREAKING: 3
+        MENDING: 1
+  axe_kit:
+    DIAMOND_AXE:
+      material: DIAMOND_AXE
+      amount: 1
+      slot: 2
+      enchants: 
+        SHARPNESS: 2
+    BOW:
+      material: BOW
+      amount: 1
+      slot: 3
+    CROSSBOW:
+      material: CROSSBOW
+      amount: 1
+      slot: 4
+    ARROW: 
+      material: ARROW
+      amount: 8
+      slot: 8
+  kraken_weapons:
+    kraken_sabre1:
+      material: kraken_sabre
+      amount: 1
+      slot: 0
+      enchants:
+        SHARPNESS: 5
+        MENDING: 1
+        UNBREAKING: 3
+    kraken_sabre2:
+      material: kraken_sabre
+      amount: 1
+      slot: 27
+      enchants:
+        SHARPNESS: 5
+        MENDING: 1
+        UNBREAKING: 3
+        KNOCKBACK: 1   
+    banana_sabre:
+      material: banana_sabre
+      amount: 1
+      slot: 35
+      enchants:
+        SHARPNESS: 5
+        MENDING: 1 
+        UNBREAKING: 3
+    mw_axe:
+      material: oiled_masterwork_axe
+      slot: 2
+      enchants:
+        SHARPNESS: 5
+  kraken_armor: 
+    kraken_helmet:
+      material: kraken_armor_helmet
+      amount: 1 
+      slot: helmet
+    kraken_chestplate:
+      material:  kraken_armor_chestplate
+      amount: 1
+      slot:  chestplate
+    kraken_leggings:
+      material: kraken_armor_leggings
+      amount: 1 
+      slot: leggings
+    kraken_boots:
+      material: kraken_armor_boots
+      amount: 1
+      slot: boots
+  spear:
+    NETHERITE_SPEAR:
+      material: NETHERITE_SPEAR
+      amount: 1
+      slot: 35
+      enchants:
+        SHARPNESS: 5
+        MENDING: 1 
+        UNBREAKING: 3
+        LUNGE: 3
+        KNOCKBACK: 2
+
+
+kits:
+  spear_mace: 
+    worlds:
+      - world_arena1
+      - world_arena2
+    displayname: "spear_mace"
+    set:
+    - macekit
+    - masterwork_armor
+    - masterwork_tools
+    - misc
+    - offhand
+    - potions 
+    - spear
+  kraken_kit:
+    worlds:
+      - world_arena1
+      - world_arena2
+    displayname: "kraken kit"
+    set:
+    - kraken_armor
+    - kraken_weapons
+    - misc
+    - offhand
+    - potions 
+  smp:
+    worlds:
+      - world_arena1
+      - world_arena2
+    displayname: "SMP Kit"
+    set:
+      - masterwork_armor
+      - masterwork_tools
+      - misc
+      - offhand
+      - potions
+  mace:
+    displayname: "Mace Kit"
+    worlds:
+      - world_arena1
+      - world_arena2
+    set:
+      - macekit
+      - masterwork_armor
+      - masterwork_tools
+      - misc
+      - offhand
+      - potions
+  sword:
+    displayname: "Sword Kit"
+    worlds:
+      - world_arena1
+      - world_arena2
+    set:
+      - sword_kit 
+  diamond_smp:
+    displayname: "SMP Kit"
+    worlds:
+      - world_arena1
+      - world_arena2
+    set:
+      - diamond_armor
+      - DIAMOND_tools
+      - offhand
+      - misc
+      - potions
+  axe:
+    displayname: "Axe Kit"
+    worlds:
+      - world_arena1
+      - world_arena2
+    set:
+      - sword_kit
+      - axe_kit
+      - gaps
+      - offhand
+
+messages:
+  prefix: "<bold><red>U</red><white>L</white> <gray>Arena</gray> <dark_gray>»</dark_gray></bold> "
+  reload: "<green>Config reloaded."
+  error-wrong-world: "<red>You cannot use this command here."
+  error-no-kit: "<red>This kit does not exist."
+  error-wrong-kit-world: "<red>You cannot use this kit in this world"
+  error-no-world: "<red>This arena does not exist."
+  error-break: "<red>You can't break blocks here."
+  usage-kit: "<gray>Usage: /arena kit <kit_name>"
+  usage-tp: "<gray>Usage: /arena tp <arena_name>"
+  broadcast-tp: "<yellow>{player} has warped to <bold>{arena}</bold></yellow>"

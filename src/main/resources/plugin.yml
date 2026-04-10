@@ -1,0 +1,13 @@
+name: UnitedArena
+version: 0.0.1
+main: org.unitedlands.arena.UnitedArena
+api-version: 1.18
+description: Project description
+author: Abusaar
+commands:
+  arena:
+    description: Arena command for players
+  arenaadmin:
+    permission: united.arena.admin
+    description: Arena command for admins
+    default: op
