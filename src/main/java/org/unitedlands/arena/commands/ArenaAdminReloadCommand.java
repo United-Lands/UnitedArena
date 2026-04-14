@@ -19,6 +19,7 @@ public class ArenaAdminReloadCommand extends BaseCommandHandler<UnitedArena> {
 
         plugin.reloadConfig();
         plugin.getBlockManager().reloadConfig();
+        plugin.getCooldownManager().reloadConfig();
 
         Messenger.sendMessage(sender, messageProvider.get("messages.reload"), null, messageProvider.get("messages.prefix"));
     }

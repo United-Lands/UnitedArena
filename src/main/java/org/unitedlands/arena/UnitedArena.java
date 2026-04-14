@@ -10,10 +10,11 @@ import org.unitedlands.arena.utils.MessageProvider;
 import org.unitedlands.utils.Logger;
 
 public class UnitedArena extends JavaPlugin {
-    
+
     private MessageProvider messageProvider;
 
-    private BlockManager blockManager; 
+    private BlockManager blockManager;
+    private ItemCooldowns cooldownManager;
 
     @Override
     public void onEnable() {
@@ -22,6 +23,7 @@ public class UnitedArena extends JavaPlugin {
 
         messageProvider = new MessageProvider(getConfig());
         blockManager = new BlockManager(this, messageProvider);
+        cooldownManager = new ItemCooldowns(this);
 
         var arenaCmd = new ArenaCommand(this, messageProvider);
         getCommand("arena").setExecutor(arenaCmd);
@@ -32,16 +34,22 @@ public class UnitedArena extends JavaPlugin {
         getCommand("arenaadmin").setTabCompleter(arenaAdminCmd);
 
         Bukkit.getPluginManager().registerEvents(blockManager, this);
-        Bukkit.getPluginManager().registerEvents(new ItemCooldowns(this), this);
+        Bukkit.getPluginManager().registerEvents(cooldownManager, this);
 
         Logger.log("UnitedArena initialized.", "UnitedArena");
     }
+
     @Override
-    public void onDisable(){
-        blockManager.clearAllBlocks(); 
+    public void onDisable() {
+        blockManager.clearAllBlocks();
         Logger.log("UnitedArena disabled (clearing all blocks)", "UnitedArena");
     }
+
     public BlockManager getBlockManager() {
         return blockManager;
+    }
+
+    public ItemCooldowns getCooldownManager() {
+        return cooldownManager;
     }
 }
