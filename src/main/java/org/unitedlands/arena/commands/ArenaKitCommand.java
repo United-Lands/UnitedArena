@@ -6,7 +6,6 @@ import java.util.List;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.meta.PotionMeta;
 import org.unitedlands.UnitedLib;
 import org.unitedlands.arena.UnitedArena;
 import org.unitedlands.classes.BaseCommandHandler;
@@ -89,21 +88,8 @@ public class ArenaKitCommand extends BaseCommandHandler<UnitedArena> {
             var amount = itemsection.getInt("amount");
             var slot = itemsection.getString("slot");
             var enchants = itemsection.getConfigurationSection("enchants");
-            var potiontype = itemsection.getString("potiontype");
 
             ItemStack newitem = UnitedLib.getInstance().getItemFactory().getItemStack(material, amount);
-
-            if (potiontype != null) {
-                if (newitem.getItemMeta() instanceof PotionMeta potionMeta) {
-                    var registry = RegistryAccess.registryAccess().getRegistry(RegistryKey.POTION);
-                    var key = TypedKey.create(RegistryKey.POTION, potiontype.toLowerCase());
-                    var basePotionType = registry.get(key);
-                    if (basePotionType != null) {
-                        potionMeta.setBasePotionType(basePotionType);
-                        newitem.setItemMeta(potionMeta);
-                    }
-                }
-            }
 
             if (enchants != null) {
                 var registry = RegistryAccess.registryAccess().getRegistry(RegistryKey.ENCHANTMENT);

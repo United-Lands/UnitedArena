@@ -14,6 +14,7 @@ public class ItemCooldowns implements Listener {
     private UnitedArena plugin;
 
     private List<String> allowedworlds;
+    private List<String> cooldownWorlds;
 
     public ItemCooldowns(UnitedArena plugin) {
         this.plugin = plugin;
@@ -30,6 +31,8 @@ public class ItemCooldowns implements Listener {
             var world = location.getWorld().getName();
             if (!allowedworlds.contains(world))
                 return;
+            if (!cooldownWorlds.contains(world))
+                return;
 
             var customCooldowns = plugin.getConfig().getConfigurationSection("cooldowns");
             if (!customCooldowns.getKeys(false).contains(event.getEntityType().toString()))
@@ -45,5 +48,6 @@ public class ItemCooldowns implements Listener {
 
     public void reloadConfig() {
         allowedworlds = plugin.getConfig().getStringList("allowed-worlds");
+        cooldownWorlds = plugin.getConfig().getStringList("cooldown-worlds");
     }
 }

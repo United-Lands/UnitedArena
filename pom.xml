@@ -6,7 +6,7 @@
 
   <groupId>org.unitedlands.arena</groupId>
   <artifactId>UnitedArena</artifactId>
-  <version>1.1.1</version>
+  <version>1.1.2</version>
 
   <name>UnitedArena</name>
   <!-- FIXME change it to the project's website -->
@@ -14,20 +14,8 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.release>17</maven.compiler.release>
+    <maven.compiler.release>25</maven.compiler.release>
   </properties>
-
-  <dependencyManagement>
-    <dependencies>
-      <dependency>
-        <groupId>org.junit</groupId>
-        <artifactId>junit-bom</artifactId>
-        <version>5.11.0</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-    </dependencies>
-  </dependencyManagement>
 
   <repositories>
     <repository>
@@ -43,7 +31,7 @@
       <id>jitpack-repo</id>
       <url>https://jitpack.io</url>
     </repository>
-        <repository>
+    <repository>
       <id>matteodev</id>
       <url>https://www.matteodev.it/spigot/public/maven/</url>
     </repository>
@@ -56,20 +44,9 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.junit.jupiter</groupId>
-      <artifactId>junit-jupiter-api</artifactId>
-      <scope>test</scope>
-    </dependency>
-    <!-- Optionally: parameterized tests support -->
-    <dependency>
-      <groupId>org.junit.jupiter</groupId>
-      <artifactId>junit-jupiter-params</artifactId>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
       <groupId>io.papermc.paper</groupId>
       <artifactId>paper-api</artifactId>
-      <version>1.21.5-R0.1-SNAPSHOT</version>
+      <version>[26.2.build,)</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
@@ -98,7 +75,7 @@
         </plugin>
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.13.0</version>
+          <version>3.15.0</version>
         </plugin>
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>

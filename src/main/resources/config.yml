@@ -1,6 +1,10 @@
 allowed-worlds:
   - world_arena1
   - world_arena2
+cooldown-worlds:
+  - world_arena1
+  - world_arena2
+  
 maxblocks: 200
 
 cooldowns:
